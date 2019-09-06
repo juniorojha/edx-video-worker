@@ -5,7 +5,10 @@ requests==2.18.4
 urllib3==1.22
 celery==4.1.1
 newrelic
-redis==2.10.6
+# Redis 2.10.6 seems to be incompatible with other things - found after running veda_encode_worker.
+# Let's use the latest version instead
+#redis==2.10.6
+redis
 # TODO! https://openedx.atlassian.net/browse/EDUCATOR-2279
 # this way is required when installing using `pip install requirements.txt` so that `encode_profiles.json` is accessible
 -e git+https://github.com/yro/chunkey.git@b485b93b096f7a209cc3f4afd67a998137e1ddb3#egg=chunkey

@@ -105,7 +105,8 @@ celery_threads: 1
 celery_online_heal_queue: online_heal_queue
 
 # Continuing
-redis_broker: dummy-redis-broker
+# This should be updated later from ansible or somewhere
+redis_broker: 10.129.103.141
 
 onsite_worker: False
 
